@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-element top"><a href="#">Home</a></li>
+          <li class="header__nav-element"><a href="#about">About</a></li>
+          <li class="header__nav-element"><a href="#work">Work</a></li>
+          <li class="header__nav-element">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <span class="background-text">
+          Home
+        </span>
+        <div class="home__main">
+          <h1 class="home__main__title">
+            <a href="#"
+              ><span>&gt;</span> Hîrbu Andrei
+              <span class="blink">&vert;</span></a
+            >
+          </h1>
+          <h3 class="home__main__subtitle">
+            web proffesional <span class="line">—</span
+            ><span class="br"><br /></span> freelancer
+          </h3>
+          <p class="home__main__content">
+            I am a freelancer web proffesional. My passion is building beautiful
+            websites for businesses just like yours.<br />
+            Check out my <a href="#work">past work</a> below.
+          </p>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="background-text">
+          About
+        </div>
+        <div class="about__terminal">
+          <div class="about__terminal__top">
+            <span class="about__terminal__top-dot red"></span>
+            <span class="about__terminal__top-dot yellow"></span>
+            <span class="about__terminal__top-dot green"></span>
+            <p class="about__terminal__top-title">
+              1. php artisan tinker (php)
+            </p>
+          </div>
+          <div class="about__terminal__main">
+            <ul class="about__terminal__main-commands">
+              <li class="about__terminal__main-command">
+                $andrei->fullName
+              </li>
+              <li class="about__terminal__main-result">Hîrbu Andrei</li>
+              <li><br /></li>
+              <li class="about__terminal__main-command">
+                $andrei->currentLocation
+              </li>
+              <li class="about__terminal__main-result">Romania 🇷🇴</li>
+              <li><br /></li>
+              <li class="about__terminal__main-command">
+                $andrei->contactInfo
+              </li>
+              <li class="about__terminal__main-result">
+                ["<a
+                  class="about__terminal__main-result-link"
+                  href="mailto:hirbu.z@gmail.com"
+                  >hirbu.z@gmail.com</a
+                >", "<a
+                  class="about__terminal__main-result-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/andrei.hrb"
+                  >Facebook</a
+                >", "<a
+                  class="about__terminal__main-result-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/andrei-hrb"
+                  >Github</a
+                >", "<a
+                  class="about__terminal__main-result-link"
+                  href="#contact"
+                  >lower on this page</a
+                >"]
+              </li>
+              <li><br /></li>
+              <li class="about__terminal__main-command">
+                $andrei->interests
+              </li>
+              <li class="about__terminal__main-result">
+                ["robotics", "podcasts", "hip-hop", "soccer", "cars"]
+              </li>
+              <li><br /></li>
+              <li class="about__terminal__main-command">
+                $andrei->skills
+              </li>
+              <li class="about__terminal__main-result">
+                ["HTML", "Sass", "JavaScript", "PHP", "Wordpress", "Woocomerce",
+                "Laravel", "git"]
+              </li>
+              <li><br /></li>
+              <li class="about__terminal__main-command">
+                <span class="blink">&vert;</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="work"
+        id="work"
+        style="height: calc(6 * var(--a-size) + 5rem)"
+      >
+        <span class="background-text">
+          Work
+        </span>
+        <div class="work__list" id="work__list">
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/casacreanga.jpg'); transition: 3s;"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                Presentation website for a local resort
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="https://casacreanga.ro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Complex Turistic Creangă
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-html"></li>
+                <li class="work__element-technologies-css"></li>
+                <li class="work__element-technologies-javascript"></li>
+                <li class="work__element-technologies-php"></li>
+                <li class="work__element-technologies-wordpress"></li>
+              </ul>
+            </div>
+          </article>
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/shop.aviagro.jpg'); transition: 5s;"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                Online shop for a starting businesses
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="http://shop.aviagro.ro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Aviagro Shop
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-html"></li>
+                <li class="work__element-technologies-css"></li>
+                <li class="work__element-technologies-javascript"></li>
+                <li class="work__element-technologies-php"></li>
+                <li class="work__element-technologies-wordpress"></li>
+                <li class="work__element-technologies-woocommerce"></li>
+              </ul>
+            </div>
+          </article>
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/stinfo.jpg'); transition: 1s;"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                Blog for a contest
+                <span style="color: gold">&#127942;</span>
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="http://stinfo.andrei-hrb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  STINFO
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-html"></li>
+                <li class="work__element-technologies-css"></li>
+                <li class="work__element-technologies-javascript"></li>
+                <li class="work__element-technologies-php"></li>
+                <li class="work__element-technologies-wordpress"></li>
+              </ul>
+            </div>
+          </article>
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/exporeit.jpg'); transition: 4s;"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                Multilang promotion site for a contest
+                <span style="color: gold">&#127942;</span>
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="http://exploreit.dcantemir.ro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Explore IT with Us
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-html"></li>
+                <li class="work__element-technologies-css"></li>
+                <li class="work__element-technologies-javascript"></li>
+                <li class="work__element-technologies-php"></li>
+              </ul>
+            </div>
+            <a
+              href="https://github.com/andrei-hrb/EuroscolaRO2018"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="work__element-github"
+            ></a>
+          </article>
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/todoblist.jpg');"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                To Do List app with authentication
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="http://to-do.andrei-hrb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="* it might take 10 seconds to load because of the hosting's limitations of the free plan"
+                >
+                  TO DO BLIST *
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-html"></li>
+                <li class="work__element-technologies-css"></li>
+                <li class="work__element-technologies-javascript"></li>
+                <li class="work__element-technologies-php"></li>
+                <li class="work__element-technologies-laravel"></li>
+              </ul>
+            </div>
+            <a
+              href="https://github.com/andrei-hrb/TO-DO-bLIST"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="work__element-github"
+            ></a>
+          </article>
+          <article class="work__element">
+            <div
+              class="work__element-background"
+              style="background-image: url('/public/sites/flashscore-api.jpg'); transition: 1s;"
+            ></div>
+            <div class="work__element-text">
+              <h5 class="work__element-title">
+                Documented API based on Puppeteer web scrapper
+              </h5>
+              <h6 class="work__element-subtitle">
+                <a
+                  href="http://flashscore-api.andrei-hrb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="* it might take 10 seconds to load because of the hosting's limitations of the free plan ** it might not work atm"
+                >
+                  Soccer API *
+                </a>
+              </h6>
+              <hr />
+              <ul class="work__element-technologies">
+                <li class="work__element-technologies-typescript"></li>
+                <li class="work__element-technologies-nodejs"></li>
+                <li class="work__element-technologies-expressjs"></li>
+              </ul>
+            </div>
+            <a
+              href="https://github.com/andrei-hrb/soccer-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="work__element-github"
+            ></a>
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <span class="background-text">
+          Contact
+        </span>
+        <div class="contact__form">
+          <form netlify name="contact">
+            <p>
+              <input name="name" type="text" placeholder="YOUR NAME HERE" />
+            </p>
+            <p>
+              <input name="mail" type="email" placeholder="YOUR EMAIL HERE" />
+            </p>
+            <p>
+              <textarea
+                name="message"
+                id="message"
+                rows="10"
+                placeholder="THE PROJECT THAT YOU WANT TO BUILD TOGHETER HERE"
+              ></textarea>
+            </p>
+            <p class="submit">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; <span class="footer__year">2020</span> Created with lots of ❤️
+        and some ☕ by <span id="me">this guy</span>.
+      </p>
+    </footer>
+    <script src="dist/script.js"></script>
+  </body>
+</html>

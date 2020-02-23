@@ -1,0 +1,117 @@
+:root {
+  --black: #50514f;
+  --white: #eaeaea;
+  --blue-white: #edf7fa;
+  --light-blue: #bcc4db;
+  --dark-blue: #5f6caf;
+  --light-orange: #ffb677;
+  --dark-orange: #ff8364;
+
+  --t-base: #002b36;
+  --t-yellow: #b58900;
+  --t-blue: #2aa198;
+
+  --a-size: 52rem;
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  --shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+    0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font);
+  letter-spacing: 0.5px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--blue-white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+section {
+  padding: 2rem;
+  min-height: calc(100vh - 4rem);
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.blink {
+  animation: blink 1s infinite;
+}
+
+.br {
+  display: none;
+}
+
+.top {
+  opacity: 0;
+  transition: 0.3s;
+
+  & a {
+    cursor: default;
+  }
+}
+
+.top.visible {
+  opacity: 1;
+
+  & a {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    min-height: unset;
+  }
+
+  .top {
+    display: none;
+  }
+
+  div.home__main,
+  div.about__terminal,
+  div.contact__form {
+    position: unset;
+    left: unset;
+    right: unset;
+    top: unset;
+    transform: unset;
+  }
+
+  div.contact__form {
+    margin: 0 auto;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .br {
+    display: unset;
+  }
+}

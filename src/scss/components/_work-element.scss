@@ -1,0 +1,217 @@
+@use "sass:string";
+
+@mixin technology($name, $color, $bg: $name, $fill: 1) {
+  &-#{string.to-lower-case($name)} {
+    background-color: $color;
+    alt: $name;
+
+    &::before {
+      background-image: url("/public/brands/#{$bg}.svg");
+      filter: invert($fill);
+    }
+
+    &::after {
+      content: $name;
+    }
+  }
+}
+
+.work__element {
+  height: 40rem;
+  background-color: #fff;
+  border-radius: 10px 10px 4px 4px;
+  box-shadow: var(--shadow);
+  margin-bottom: 10rem;
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  position: relative;
+
+  &-background {
+    border-radius: 10px 0 0 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  &-background:hover {
+    background-position: bottom;
+  }
+
+  &-text {
+    padding: 3rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+  &-title,
+  &-subtitle {
+    color: var(--black);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  &-title {
+    font-weight: 400;
+  }
+
+  &-subtitle {
+    font-weight: 300;
+
+    &::after {
+      display: inline-block;
+      content: " ";
+      background-image: url(/public/ela.svg);
+      background-size: 2rem 2rem;
+      width: 2rem;
+      height: 2rem;
+      filter: invert(0.3);
+      margin-left: 1.25rem;
+    }
+  }
+
+  & hr {
+    width: 35%;
+  }
+
+  &-technologies {
+    list-style: none;
+    padding: 0;
+
+    & li {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.55rem;
+      padding: 1rem;
+      // border: 3px solid var(--white);
+      border-radius: 4px 4px 4px 4px;
+      color: #fff;
+      margin: 1.5rem 1.5rem 0 0;
+
+      &::before {
+        background-size: 3.5rem 3.5rem;
+        background-repeat: no-repeat;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: block;
+        content: " ";
+        margin-right: 5px;
+      }
+
+      &::after {
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &-technologies {
+    @include technology("HTML", #f16529, "html5");
+    @include technology("CSS", #2965f1, "css3");
+    @include technology("JavaScript", #f0db4f, "js-square");
+    @include technology("PHP", #787cb5);
+    @include technology("NodeJS", #68a063, "node-js");
+    @include technology("ExpressJS", #000);
+    @include technology("Laravel", #f05340);
+    @include technology("WooCommerce", #96588a, "woocommerce", 0);
+    @include technology("WordPress", #0073aa, "wordpress-simple");
+    @include technology("Sass", #cd6799);
+    @include technology("TypeScript", #007acc);
+  }
+
+  &-github {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 12rem;
+    height: 12rem;
+    background-color: #28a745;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 4px 0;
+
+    &::after {
+      display: block;
+      content: " ";
+      background-image: url(/public/brands/github.svg);
+      background-size: 5rem 5rem;
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      filter: invert(1);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .work {
+    height: unset !important;
+    margin-top: 8rem;
+
+    &__list {
+      position: unset !important;
+      top: unset !important;
+      left: 0 !important;
+      transform: unset !important;
+      margin: unset !important;
+      width: unset !important;
+
+      & hr {
+        display: none;
+      }
+    }
+
+    &__element {
+      display: block;
+      height: fit-content;
+
+      &-background {
+        height: 30rem;
+        border-radius: 10px 10px 0 0;
+      }
+
+      &-text {
+        padding: 3rem 1rem;
+      }
+
+      &-title,
+      &-subtitle {
+        font-size: 2rem !important;
+      }
+
+      &-subtitle::after {
+        background-size: 1.5rem 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+      }
+
+      &-technologies {
+        & li {
+          font-size: 1.25rem;
+
+          &::before {
+            background-size: 1.75rem 1.75rem;
+            height: 1.75rem;
+            width: 1.75rem;
+          }
+        }
+      }
+
+      &-github {
+        width: 7rem;
+        height: 7rem;
+
+        &::after {
+          background-size: 2.45rem 2.45rem;
+          height: 2.45rem;
+          width: 2.45rem;
+        }
+      }
+    }
+  }
+}
