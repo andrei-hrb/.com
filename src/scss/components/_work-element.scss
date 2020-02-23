@@ -34,6 +34,18 @@
     background-position: top;
     background-position-x: 0%;
     background-position-y: 0%;
+
+    &-no {
+      background-position: unset;
+      background-position-x: unset;
+      background-position-y: unset;
+
+      &:hover {
+        background-position: unset;
+        background-position-x: unset;
+        background-position-y: unset;
+      }
+    }
   }
 
   &-background:hover {
