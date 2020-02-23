@@ -32,10 +32,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-position-x: 0%;
+    background-position-y: 0%;
   }
 
   &-background:hover {
     background-position: bottom;
+    background-position-x: 100%;
+    background-position-y: 100%;
   }
 
   &-text {
