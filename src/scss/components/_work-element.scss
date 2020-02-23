@@ -36,15 +36,9 @@
     background-position-y: 0%;
 
     &-no {
-      background-position: unset;
-      background-position-x: unset;
-      background-position-y: unset;
-
-      &:hover {
-        background-position: unset;
-        background-position-x: unset;
-        background-position-y: unset;
-      }
+      background-position: center !important;
+      background-position-x: 50% !important;
+      background-position-y: 50% !important;
     }
   }
 
