@@ -25,12 +25,10 @@ html {
   font-family: var(--font);
   letter-spacing: 0.5px;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   background-color: var(--blue-white);
-  overflow-x: visible;
 }
 
 a {
@@ -85,6 +83,10 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
   section {
     min-height: unset;
   }
