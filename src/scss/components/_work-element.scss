@@ -133,27 +133,16 @@
   }
 
   &-github {
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    width: 12rem;
-    height: 12rem;
-    background-color: #28a745;
     position: absolute;
-    right: 0;
     bottom: 0;
-    border-radius: 0 0 4px 0;
-
-    &::after {
-      display: block;
-      content: " ";
-      background-image: url(/public/brands/github.svg);
-      background-size: 5rem 5rem;
-      width: 5rem;
-      height: 5rem;
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-      filter: invert(1);
-    }
+    right: 0;
+    z-index: 10;
+    background-image: url(/public/brands/github.png);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0px 0px 5px 0;
   }
 }
 
@@ -213,14 +202,9 @@
       }
 
       &-github {
+        background-size: 7rem;
         width: 7rem;
         height: 7rem;
-
-        &::after {
-          background-size: 2.45rem 2.45rem;
-          height: 2.45rem;
-          width: 2.45rem;
-        }
       }
     }
   }
