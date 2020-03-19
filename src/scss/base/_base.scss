@@ -20,6 +20,11 @@
     0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
+@font-face {
+  font-family: Snell Roundhand;
+  src: url(/public/fonts/SnellBT-Bold.otf);
+}
+
 html {
   font-size: 62.5%;
   font-family: var(--font);
