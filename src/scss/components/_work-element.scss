@@ -40,6 +40,12 @@
       background-position-x: 50% !important;
       background-position-y: 50% !important;
     }
+
+    &-no-left {
+      background-position: left !important;
+      background-position-x: 0% !important;
+      background-position-y: 0% !important;
+    }
   }
 
   &-background:hover {
@@ -72,7 +78,7 @@
   &-subtitle {
     font-weight: 300;
 
-    &::after {
+    &:not(&-no-after)::after {
       display: inline-block;
       content: " ";
       background-image: url(/public/images/ela.svg);
@@ -130,8 +136,11 @@
     @include technology("WordPress", #0073aa, "wordpress-simple");
     @include technology("Sass", #cd6799);
     @include technology("TypeScript", #007acc);
+    @include technology("Elementor", #da5e9a);
+    @include technology("Puppeteer", #00d8a2, "puppeteer", 0);
   }
 
+  &-fiverr,
   &-github {
     position: absolute;
     bottom: 0;
@@ -144,6 +153,10 @@
     height: 10rem;
     border-radius: 0px 0px 5px 0;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  &-fiverr {
+    background-image: url(/public/brands/fiverr.png);
   }
 }
 
@@ -202,7 +215,8 @@
         }
       }
 
-      &-github {
+      &-github,
+      &-fiverr {
         background-size: 7rem;
         width: 7rem;
         height: 7rem;
