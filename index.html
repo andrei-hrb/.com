@@ -520,6 +520,10 @@
        * sized images after loading.
        */
       window.addEventListener("load", () => {
+        // some very light form of analitics, with no payload, just to know an aproximation of the users that enter my site, GDPR compliant
+        // source: https://repl.it/@AndreiHirbu/stuff
+        fetch("https://stuff.andrei-hrb.com/");
+
         const workElementsBackgrounds = document.querySelectorAll(
           ".work__element-background-s"
         );
