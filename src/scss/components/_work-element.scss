@@ -128,16 +128,18 @@
     @include technology("HTML", #f16529, "html5");
     @include technology("CSS", #2965f1, "css3");
     @include technology("JavaScript", #f0db4f, "js-square");
-    @include technology("PHP", #787cb5);
+    @include technology("PHP", #787cb5, "php");
     @include technology("NodeJS", #68a063, "node-js");
-    @include technology("ExpressJS", #000);
-    @include technology("Laravel", #f05340);
+    @include technology("ExpressJS", #000, "expressjs");
+    @include technology("Laravel", #f05340, "laravel");
     @include technology("WooCommerce", #96588a, "woocommerce", 0);
     @include technology("WordPress", #0073aa, "wordpress-simple");
-    @include technology("Sass", #cd6799);
-    @include technology("TypeScript", #007acc);
-    @include technology("Elementor", #da5e9a);
+    @include technology("Sass", #cd6799, "sass");
+    @include technology("TypeScript", #007acc, "typescript");
+    @include technology("Elementor", #da5e9a, "elementor");
     @include technology("Puppeteer", #00d8a2, "puppeteer", 0);
+    @include technology("React", #00d8ff, "react");
+    @include technology("Serverless", #f26d61, "serverless", 0);
   }
 
   &-fiverr,
